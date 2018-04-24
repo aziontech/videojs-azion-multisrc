@@ -2,6 +2,7 @@ import videojs from 'video.js';
 import document from 'global/document';
 
 const event_blist = "blacklistplaylist";
+const event_error = "error";
 const event_pause = "pause";
 const event_play = "play";
 const event_ready = "ready";
@@ -34,7 +35,7 @@ const initPlugin = function (player, srcs) {
 
     player.tech(trust_me).on(event_retry, onSourceFail);
     player.tech(trust_me).on(event_blist, onSourceFail);
-
+    player.on(event_error, onSourceFail);
     player.on(event_play, function () {
         was_playing = true;
     });
