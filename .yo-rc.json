@@ -1,0 +1,14 @@
+{
+  "generator-videojs-plugin": {
+    "scope": "",
+    "name": "videojs-azion-multisrc",
+    "description": "Azion Multi Src",
+    "author": "Vinicius Mignot <vinicius.mignot@azion.com>",
+    "license": "private",
+    "sass": false,
+    "ie8": true,
+    "docs": false,
+    "lang": false,
+    "husky": "none"
+  }
+}
